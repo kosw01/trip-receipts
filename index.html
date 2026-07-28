@@ -1073,7 +1073,7 @@ $('zCats').addEventListener('click',e=>{
 $('resetBtn').onclick=async()=>{
   if(!confirm('모든 영수증을 지웁니다. 계속할까요?'))return;
   await wipe();
-  S={title:'',start:'',end:'',days:[],shots:{},cover:false,screen:'setup'};
+  S={name:'',title:'',start:'',end:'',days:[],shots:{},cover:false,screen:'setup'};
   $('fTitle').value='';$('fStart').value='';$('fEnd').value='';
   go('setup');
 };
